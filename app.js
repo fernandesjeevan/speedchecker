@@ -74,8 +74,8 @@ function initTyping(){
     
         errorTag.innerText = errors;
     
-        cpmTag.innerText = characterIndex - errors;//cpm will not count errors
-    
+       // cpmTag.innerText = characterIndex - errors; //error solved
+    cpmTag.innerText =  Math.round((characterIndex - errors)/(maxTime-timeLeft))*60;
         let wpm = Math.round((((characterIndex - errors) / 5) / (maxTime - timeLeft)) * 60);
         wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
         wpmTag.innerText = wpm;
