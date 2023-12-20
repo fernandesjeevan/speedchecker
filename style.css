@@ -85,6 +85,8 @@ body {
 
 .container button {
     width: 71%;
+    display: block;
+    margin-top: 50px;
     position: absolute;
     height: 17%;
     border: none;
